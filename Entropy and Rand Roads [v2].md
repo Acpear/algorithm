@@ -4,9 +4,9 @@
 
 **EN**: You have already finished v1 problem, right? The v1 problem is so easy, so in this v2 problem, I will introduce you the **ENTROPY**. An Entropy is a value defined as:
 
-$$
+```math
 E = \texttt{Turn} \times \sum_{r = 1}^{a} \sum_{c = 1}^{b} \texttt{Diff\_Sum}(r, c)
-$$
+```
 
 - where `Turn` is the count for change direction in your generated matrix:
 
@@ -31,9 +31,9 @@ Your task is to find a full-filled matrix satisfying v1 requirements and has the
 
 **ZH**: v1 的题很简单，这里向你介绍一种衡量复杂度的概念：**熵**。本题里的熵的定义如下：
 
-$$
+```math
 \text{熵} = \text{转弯次数} \times \sum_{r = 1}^{a} \sum_{c = 1}^{b} \text{邻差值和}(r, c)
-$$
+```
 
 - 其中 *转弯次数* 是指你生成的矩阵中转弯的次数，比如：
 
