@@ -3,6 +3,7 @@
 ## 熵和随机道路 [v2]
 
 **EN**: You have already finished v1 problem, right? The v1 problem is so easy, so in this v2 problem, I will introduce you the **ENTROPY**. An Entropy is a value defined as:
+
 $$
 E = \texttt{Turn} \times \sum_{r = 1}^{a} \sum_{c = 1}^{b} \texttt{Diff\_Sum}(r, c)
 $$
@@ -28,7 +29,8 @@ $$
 
 Your task is to find a full-filled matrix satisfying v1 requirements and has the maximum entropy you can reach.
 
-**CN**: v1 的题很简单，这里向你介绍一种衡量复杂度的概念：**熵**。本题里的熵的定义如下：
+**ZH**: v1 的题很简单，这里向你介绍一种衡量复杂度的概念：**熵**。本题里的熵的定义如下：
+
 $$
 \text{熵} = \text{转弯次数} \times \sum_{r = 1}^{a} \sum_{c = 1}^{b} \text{邻差值和}(r, c)
 $$
