@@ -20,10 +20,10 @@ E = \texttt{Turn} \times \sum_{r = 1}^{a} \sum_{c = 1}^{b} \texttt{Diff\_Sum}(r,
 - and the `Diff_Sum` is the absolute value sum of those differences: the $(r, c)$ number and its neighbour numbers, code as:
 
   ```plain
-  u_diff = abs(matrix[r][c] - matrix[r][c + 1])  # up direction, if (r, c) has a neighbour in up direction, else u_diff = 0
-  d_diff = abs(matrix[r][c] - matrix[r][c - 1])  # down direction, condition as above
-  l_diff = abs(matrix[r][c] - matrix[r - 1][c])  # left
-  r_diff = abs(matrix[r][c] - matrix[r + 1][c])  # right
+  u_diff = abs(matrix[r][c] - matrix[r - 1][c])  # up direction, if (r, c) has a neighbour in up direction, else u_diff = 0
+  d_diff = abs(matrix[r][c] - matrix[r + 1][c])  # down direction, condition as above
+  l_diff = abs(matrix[r][c] - matrix[r][c - 1])  # left
+  r_diff = abs(matrix[r][c] - matrix[r][c + 1])  # right
   diff_sum = u_diff + d_diff + l_diff + r_diff
   ```
 
@@ -47,10 +47,10 @@ Your task is to find a full-filled matrix satisfying v1 requirements and has the
 - 而 *邻差值和* 是指 $(r, c)$ 这个位置的数和它的上下左右四个邻居的差值的绝对值之和，代码如下：
 
   ```plain
-  u_diff = abs(matrix[r][c] - matrix[r][c + 1])  # 上方，如果 (r, c) 有上方的邻居，没邻居就 u_diff = 0
-  d_diff = abs(matrix[r][c] - matrix[r][c - 1])  # 下方，相同上述条件
-  l_diff = abs(matrix[r][c] - matrix[r - 1][c])  # 左方
-  r_diff = abs(matrix[r][c] - matrix[r + 1][c])  # 右方
+  u_diff = abs(matrix[r][c] - matrix[r - 1][c])  # 上方，如果 (r, c) 有上方的邻居，没邻居就 u_diff = 0
+  d_diff = abs(matrix[r][c] - matrix[r + 1][c])  # 下方，相同上述条件
+  l_diff = abs(matrix[r][c] - matrix[r][c - 1])  # 左方
+  r_diff = abs(matrix[r][c] - matrix[r][c + 1])  # 右方
   diff_sum = u_diff + d_diff + l_diff + r_diff
   ```
 
