@@ -8,7 +8,7 @@
 
 **Tip**: The arbitrary coordinate $(x_0, y_0)$ *may* not in the $n$ points.
 
-<div style="border: 2px solid black; border-radius: 10px; padding: 5px">
+<div>
 <img width="33%" src="./imgs/nearest_points_0.webp">
 <img width="33%" src="./imgs/nearest_points_1.webp">
 <img width="33%" src="./imgs/nearest_points_2.webp">
